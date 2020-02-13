@@ -1,5 +1,11 @@
 rm(list = ls())
 
+# --------------------------------
+# initialize environment
+# --------------------------------
+packrat::init("~/Dropbox/GitHub/environments/ROCCA-TAD/")
+packrat::on()
+
 # load libraries
 library(dplyr)
 library(tidytext)

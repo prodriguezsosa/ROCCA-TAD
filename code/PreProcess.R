@@ -1,6 +1,14 @@
 # clean up environment
 rm(list = ls())
 
+# --------------------------------
+# setup
+# --------------------------------
+
+# initialize environment
+packrat::init("~/Dropbox/GitHub/environments/ROCCA-TAD/")
+packrat::on()
+
 # libraries
 
 library(pbapply)

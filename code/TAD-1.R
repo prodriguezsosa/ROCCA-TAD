@@ -8,6 +8,12 @@ rm(list = ls())  # wipe clean
 # for bigger projects: use a dependency manager (packrat)
 # key packages: tidytext, quanteda, stringr
 
+# --------------------------------
+# initialize environment
+# --------------------------------
+packrat::init("~/Dropbox/GitHub/environments/ROCCA-TAD/")
+packrat::on()
+
 #-----------------------------
 # 1 SETTING UP
 #-----------------------------
