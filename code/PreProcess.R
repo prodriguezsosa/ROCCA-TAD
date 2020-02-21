@@ -43,4 +43,4 @@ processed_data <- processed_data %>% mutate(spanish = if_else(source %in% spanis
 processed_data <- processed_data %>% mutate(document = 1:nrow(processed_data))
 
 # save processed data (to not have to repeat code above)
-saveRDS(processed_data, "refugee_news_corpus.rds")
+saveRDS(processed_data, "corpus_of_articles.rds")

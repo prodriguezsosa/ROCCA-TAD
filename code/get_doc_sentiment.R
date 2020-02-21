@@ -16,7 +16,7 @@ library(quanteda)
 in_path <- "~/Drobox/GitHub/Tennessee/data/"
 
 # load data
-refugee_corpus <- readRDS(paste0(in_path, "refugee_news_corpus.rds"))
+refugee_corpus <- readRDS(paste0(in_path, "corpus_of_articles.rds"))
 
 # convert to tidy format
 corpus_tidy <- refugee_corpus %>% 
@@ -44,4 +44,4 @@ corpus_tidy <- corpus_tidy %>%
 refugee_corpus_sentiment <- left_join(refugee_corpus, corpus_tidy, by = "document") %>% mutate(sentiment = sentiment/ntoken(text))
 
 # save
-saveRDS(refugee_corpus_sentiment, paste0(in_path, "refugee_corpus_sentiment.rds"))
+saveRDS(refugee_corpus_sentiment, paste0(in_path, "corpus_of_articles_sentiment.rds"))
