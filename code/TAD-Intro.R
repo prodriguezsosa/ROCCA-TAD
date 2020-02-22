@@ -39,7 +39,7 @@ nrow(local_media_corpus)
 ncol(local_media_corpus)
 
 # using the dollar sign to select specific variables
-local_media_corpus$first_sentence[1:5] 
+local_media_corpus$first_sentence[1:5]
 head(local_media_corpus$first_sentence)
 tail(local_media_corpus$first_sentence)
 
