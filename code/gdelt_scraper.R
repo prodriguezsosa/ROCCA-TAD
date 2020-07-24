@@ -42,9 +42,3 @@ test_extract <- bq_table_download(tb)
 saveRDS(test_extract, "/Volumes/Potosi/Research/ROCCA/gdelt/tennessee_media.rds")
 
 
-
-
-
-
-
-saveRDS(test_extract, "/Volumes/Potosi/Research/Data/GDELT/USOutlets/query_trial1.rds")
