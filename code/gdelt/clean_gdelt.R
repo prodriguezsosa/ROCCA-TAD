@@ -22,6 +22,7 @@ library(treemap)
 
 # load data
 corpus <- readRDS("~/Dropbox/GitHub/large_data/ROCCA-TAD/gdelt/tennessee_media.rds")
+figure_path <- "~/Dropbox/GitHub/repositories/ROCCA-TAD/figures/"
 
 # subset corpus
 corpus <- corpus %>% 
@@ -44,6 +45,7 @@ corpus$headlines  <- pblapply(corpus$SOURCEURL, find_headlines) %>% unlist()
 
 # frequency
 corpus <- corpus %>% mutate(on_topic = if_else(is.na(headlines), 0, 1))
+png(file=paste0(figure_path, "gdelt_freq.png"))
 corpus %>% 
   select(Year, on_topic) %>% 
   group_by(Year) %>% 
@@ -65,6 +67,7 @@ corpus %>%
     axis.text.y = element_text(size=15),
     axis.title.y = element_text(size=18, margin = margin(t = 0, r = 20, b = 0, l = 20)),
     axis.title.x = element_text(size=18, margin = margin(t = 20, r = 0, b = 20, l = 0)))
+dev.off()
 
 # avg tone by newspaper
 plot_tibble <- corpus %>% 
@@ -76,6 +79,7 @@ plot_tibble <- corpus %>%
   mutate(MentionSourceName = factor(MentionSourceName, levels = unique(MentionSourceName))) %>%
   na.omit()
 
+png(file=paste0(figure_path, "gdelt_tone.png"))
 ggplot(plot_tibble, aes(x = MentionSourceName, y = mean_tone)) +  
   geom_point(size = 2, color = if_else(plot_tibble$mean_tone <= 0, 'red', 'blue')) +
   geom_errorbar(aes(ymin = mean_tone + 1.96*std.error, ymax = mean_tone - 1.96*std.error), width=.2,position=position_dodge(0.05)) +
@@ -92,6 +96,7 @@ ggplot(plot_tibble, aes(x = MentionSourceName, y = mean_tone)) +
         legend.key=element_blank(),
         legend.position = "top",
         legend.spacing.x = unit(0.25, 'cm'))
+dev.off()
 
 
 
