@@ -1,10 +1,6 @@
-rm(list = ls()) 
-
 # --------------------------------
 # setup
 # --------------------------------
-packrat::init("~/Dropbox/GitHub/environments/ROCCA-TAD/")
-packrat::on()
 
 # libraries
 library(readtext)
@@ -14,11 +10,15 @@ library(pbapply)
 library(progress)
 
 # paths
-data_path <- "~/Dropbox/Research/Tennessee/ROCCA-TAD/"
-out_path <- "~/Dropbox/Research/Tennessee/ROCCA-TAD/processed/"
+data_path <- "~/Dropbox/GitHub/large_data/ROCCA-TAD/tennessean/" # path to where raw data files are stored
+out_path <- "~/Dropbox/GitHub/large_data/ROCCA-TAD/tennessean/processed/" # path to where you want to save the processed files
+
+# --------------------------------
+# loop through raw data
+# --------------------------------
 
 # load data
-scraper_names <- c('ancher-2015', 'angelina-2018', 'courtenay-2019', 'holly-2014', 'mark-2017', 'monika-2016')
+scraper_names <- c('ancher-2015', 'angelina-2018', 'courtenay-2019', 'holly-2014', 'mark-2017', 'monika-2016') # names refer to the ROCCA team member that scraped the respective files 
 
 scraper_list <- vector('list', length(scraper_names)) %>% setNames(scraper_names)
 for(scraper in scraper_names){
@@ -106,7 +106,7 @@ corpus$publisher[grepl('^G', corpus$publisher)] <- 'Gannett Co., Inc.'
 corpus$language[grepl('^E', corpus$language)] <- 'English'
 corpus$source_type[grepl(paste('^N', '^n', '|'), corpus$source_type)] <- 'Newspapers'
 
-
+# save processed data
 saveRDS(tennessean, paste0(out_path, "tennessean.rds"))
 
 

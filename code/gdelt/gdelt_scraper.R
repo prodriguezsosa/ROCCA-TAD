@@ -1,4 +1,4 @@
-rm(list = ls())
+# useful urls:
 # https://www.allyoucanread.com/tennessee-newspapers/ Tennessee Media
 # https://www.youtube.com/watch?v=HXV3zeQKqGY  SQL primer
 # https://www.gdeltproject.org/data/lookups/  GDELT codes
@@ -6,10 +6,6 @@ rm(list = ls())
 # --------------------------------
 # setup
 # --------------------------------
-
-# initialize environment
-packrat::init("~/Dropbox/GitHub/environments/ROCCA-TAD/")
-packrat::on()
 
 # libraries
 library(dplyr)
@@ -39,6 +35,6 @@ ORDER BY GLOBALEVENTID DESC;"
 
 tb <- bq_project_query(billing, sql)
 test_extract <- bq_table_download(tb)
-saveRDS(test_extract, "/Volumes/Potosi/Research/ROCCA/gdelt/tennessee_media.rds")
+saveRDS(test_extract, "~/Dropbox/GitHub/large_data/ROCCA-TAD/gdelt/tennessee_media.rds")
 
 
