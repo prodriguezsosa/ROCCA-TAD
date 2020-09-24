@@ -19,7 +19,7 @@ Available corpora:
 ![the_tennessean_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_freq.png?raw=true)
 ![the_tennessean_wc.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_wc.png?raw=true)
 
-**1. [GDELT]:**
+**2. GDELT:**
 
 **a. Data:** 
 - Type of text: urls and tone of all articles (scraped by GDELT) for the top 32 newspapers in TN (should have at least one per our locations of interest).
@@ -34,7 +34,7 @@ Available corpora:
 ![gdelt_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_freq.png?raw=true)
 ![gdelt_tone.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_tone.png?raw=true)
 
-**1. [NOW Corpus]:**
+**3. NOW Corpus:**
 
 **a. Data:** 
 - Type of text: collection of full text US news articles ([see here](https://www.english-corpora.org/now/) for description).
