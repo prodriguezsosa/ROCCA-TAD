@@ -16,6 +16,9 @@ Available corpora:
 - clean_tennessean.R: processes all the raw txt datafiles collected by the team and outputs tennessean.rds.
 - tennessean_preliminary.R: performs some basic analysis on tennessean.rds (wordclouds and count plots).
 
+![the_tennessean_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_freq.png?raw=true)
+![the_tennessean_wc.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_wc.png?raw=true)
+
 **1. [GDELT]:**\
 
 **a. Data:** 
