@@ -1,6 +1,6 @@
 # ROCCA-TAD
 
-Below we describe the data and R scripts put together by the ROCCA text as data team. You can access the data using [this link](https://www.dropbox.com/sh/jrcvnsmpgdtinul/AAC_Kq6PRhZQaZf4HDPsG52da?dl=0).
+Below we describe the data and R scripts put together by the ROCCA text as data team. You can access the data using [this link](https://www.dropbox.com/sh/jrcvnsmpgdtinul/AAC_Kq6PRhZQaZf4HDPsG52da?dl=0). All the scripts referred to below can be found in the codes folder.
 
 Available corpora:
 
