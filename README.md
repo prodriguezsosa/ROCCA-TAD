@@ -40,6 +40,7 @@ Available corpora:
 - Type of text: collection of full text US news articles ([see here](https://www.english-corpora.org/now/) for description).
 - Period: 2010 - 2019
 - Source: [News on the Web (NOW) Corpus](https://www.english-corpora.org/now/)
+- Note: for the raw NOW data files contact [Pedro L. Rodriguez](pedro.rodriguez@vanderbilt.edu).
 
 **b. Scripts:**
 - prepare_now_data.R: cleans raw NOW data and outputs news_corpus.rds.
