@@ -1,6 +1,6 @@
 # ROCCA-TAD
 
-Below we describe the data and R scripts put together by the ROCCA text as data team.
+Below we describe the data and R scripts put together by the ROCCA text as data team. You can access the data using [this link](https://www.dropbox.com/sh/jrcvnsmpgdtinul/AAC_Kq6PRhZQaZf4HDPsG52da?dl=0).
 
 Available corpora:
 
@@ -30,6 +30,10 @@ Available corpora:
 **b. Scripts:**
 - gdelt_scraper.R: scrapes GDELT for the top Tennessean newspapers in each of our target locations and outputs tennessee_media.rds.
 - clean_gdelt.R: pre-processes tennessee_media.rds and performs basic analysis on tennessee_media.rds (# of articles on refugees and average tone by newspaper).
+
+![gdelt_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_freq.png?raw=true)
+![gdelt_tone.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_tone.png?raw=true)
+
 
 **1. [NOW Corpus]:**\
 
