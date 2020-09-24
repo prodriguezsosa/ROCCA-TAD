@@ -22,7 +22,7 @@ Available corpora:
 **2. GDELT:**
 
 **a. Data:** 
-- Type of text: urls and tone of all articles (scraped by GDELT) for the top 32 newspapers in TN (should have at least one per our locations of interest).
+- Type of text: urls and tone of all articles (scraped by GDELT) for the top 32 newspapers in TN (should have at least one newspaper per our locations of interest).
 - Period: 2015 - March 2020
 - Source: [The GDELT Project](https://www.gdeltproject.org)
 - Note: the urls for the most part are similar to headlines. For a full description of all the variables see the links referred to in the scripts.
