@@ -17,7 +17,7 @@ library(doParallel)
 # paths
 in_path_texts <- "/Volumes/Potosi/Research/Data/NOW/Text/"
 in_path_sources <- "/Volumes/Potosi/Research/Data/NOW/Sources/"
-out_path_data <- "/Volumes/Potosi/Research/Neuropolitics/corpora/"
+out_path_data <- "~/Dropbox/GitHub/large_data/ROCCA-TAD/now/"
 
 # --------------------------------
 # load data

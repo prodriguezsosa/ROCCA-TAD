@@ -22,7 +22,6 @@ library(treemap)
 
 # load data
 corpus <- readRDS("~/Dropbox/GitHub/large_data/ROCCA-TAD/gdelt/tennessee_media.rds")
-dictionaries <- "~/Dropbox/GitHub/repositories/voice2insights/data/dictionaries/"
 
 # subset corpus
 corpus <- corpus %>% 
@@ -54,7 +53,7 @@ corpus %>%
   ggplot(aes(x = as.character(Year), y = proportion)) + 
   geom_bar(position = "dodge", stat = "identity", color = '#F8766D', fill = '#619CFF') +
   xlab("") + 
-  ylab("Percent of Articles on Topic") + 
+  ylab("Percent of Articles on Topic of \n Immigration/Refugees") + 
   theme_bw() +
   theme(
     panel.border = element_blank(),
@@ -84,7 +83,7 @@ ggplot(plot_tibble, aes(x = MentionSourceName, y = mean_tone)) +
   ylab("Avg. Tone By Newspaper") +
   xlab("") +
   theme(panel.background = element_blank(),
-        axis.text.x = element_text(size=16, angle = 90, hjust = 1, vjust = 0.5),
+        axis.text.x = element_text(size=14, angle = 90, hjust = 1, vjust = 0.5),
         axis.text.y = element_text(size=16),
         axis.title.y = element_text(size=18, margin = margin(t = 0, r = 15, b = 0, l = 15)),
         axis.title.x = element_text(size=18, margin = margin(t = 15, r = 0, b = 15, l = 0)),

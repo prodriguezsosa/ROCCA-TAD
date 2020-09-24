@@ -13,7 +13,7 @@ library(lubridate)
 
 # paths
 data_path <- "~/Dropbox/GitHub/large_data/ROCCA-TAD/tennessean/processed/" # path to processed tennessean data
-figure_path <- "~/Dropbox/GitHub/repositories/ROCCA-TAD/code/figures/"
+figure_path <- "~/Dropbox/GitHub/repositories/ROCCA-TAD/figures/"
 
 # load data
 corpus <- readRDS(paste0(data_path, 'tennessean.rds'))
@@ -60,7 +60,7 @@ png(file=paste0(figure_path, "the_tennessean_freq.png"))
 ggplot(plot_tibble, aes(x = as.character(year), y = proportion)) + 
   geom_bar(position = "dodge", stat = "identity", color = '#F8766D', fill = '#619CFF') +
   xlab("") + 
-  ylab("Percent of Articles on Topic of Immigration/Refugees") + 
+  ylab("Percent of Articles on Topic of \n Immigration/Refugees") + 
   theme_bw() +
   theme(
     panel.border = element_blank(),
