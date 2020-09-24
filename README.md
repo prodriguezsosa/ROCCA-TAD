@@ -14,7 +14,7 @@ Available corpora:
 
 **b. Scripts:**
 - clean_tennessean.R: processes all the raw txt datafiles collected by the team and outputs tennessean.rds.
-- tennessean_preliminary.R: performs some basic analysis on tennessean.rds (wordclouds and count plots).
+- tennessean_preliminary.R: performs some basic analysis on tennessean.rds (topic wordcloud and topic frequency plot).
 
 ![the_tennessean_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_freq.png?raw=true)
 ![the_tennessean_wc.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/the_tennessean_wc.png?raw=true)
@@ -29,7 +29,7 @@ Available corpora:
 
 **b. Scripts:**
 - gdelt_scraper.R: scrapes GDELT for the top Tennessean newspapers in each of our target locations and outputs tennessee_media.rds.
-- clean_gdelt.R: pre-processes tennessee_media.rds and performs basic analysis on tennessee_media.rds (# of articles on refugees and average tone by newspaper).
+- clean_gdelt.R: pre-processes tennessee_media.rds and performs basic analysis on tennessee_media.rds (topic frequency plot and average tone by newspaper).
 
 ![gdelt_freq.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_freq.png?raw=true)
 ![gdelt_tone.png](https://github.com/prodriguezsosa/ROCCA-TAD/blob/master/figures/gdelt_tone.png?raw=true)
